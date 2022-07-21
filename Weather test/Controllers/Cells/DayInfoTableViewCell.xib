@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="DayInfoTableViewCell" customModule="Weather_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dhm-0r-ROc">
+                        <rect key="frame" x="20" y="5" width="377" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfT-17-Rqv">
+                                <rect key="frame" x="0.0" y="38" width="42.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMW-CD-bWF">
+                                <rect key="frame" x="168.5" y="38" width="42.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-88-I0F">
+                                <rect key="frame" x="337" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="R9e-88-I0F" secondAttribute="height" multiplier="1:1" id="beG-dP-Xyd"/>
+                                    <constraint firstAttribute="height" constant="40" id="mx5-G4-ejg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Dhm-0r-ROc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Tvl-oc-VFz"/>
+                    <constraint firstItem="Dhm-0r-ROc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UiI-AK-5TN"/>
+                    <constraint firstAttribute="bottom" secondItem="Dhm-0r-ROc" secondAttribute="bottom" constant="5" id="XKw-gG-qeK"/>
+                    <constraint firstAttribute="trailing" secondItem="Dhm-0r-ROc" secondAttribute="trailing" constant="20" id="ztf-BW-Tfq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dayLabel" destination="AfT-17-Rqv" id="q4J-qB-43l"/>
+                <outlet property="tempLabel" destination="eMW-CD-bWF" id="NYV-Ci-PBt"/>
+                <outlet property="weatherImageView" destination="R9e-88-I0F" id="Cp3-R2-M7M"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

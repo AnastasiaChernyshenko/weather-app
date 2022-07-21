@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Weather_test" customModuleProvider="target">
+            <connections>
+                <outlet property="autoCompleteTableView" destination="hML-fM-oi3" id="djY-zL-ogD"/>
+                <outlet property="backButton" destination="xfC-go-soF" id="n9R-au-9Bc"/>
+                <outlet property="searchBar" destination="oF3-3B-Arz" id="gcS-NU-6xE"/>
+                <outlet property="searchButton" destination="aww-mg-77S" id="aX2-tv-vtV"/>
+                <outlet property="tableViewBottomDefaultConstraint" destination="pl5-wJ-tHm" id="v3b-Tn-av6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Enter your city" translatesAutoresizingMaskIntoConstraints="NO" id="oF3-3B-Arz">
+                    <rect key="frame" x="54" y="49" width="306" height="51"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aww-mg-77S">
+                    <rect key="frame" x="365" y="52.5" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="73i-01-4Cc"/>
+                        <constraint firstAttribute="height" constant="44" id="CDg-74-dM7"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hML-fM-oi3">
+                    <rect key="frame" x="0.0" y="110" width="414" height="786"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-go-soF">
+                    <rect key="frame" x="5" y="52.5" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="grU-eP-xhh"/>
+                        <constraint firstAttribute="height" constant="44" id="qew-Pp-udz"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oF3-3B-Arz" firstAttribute="centerY" secondItem="xfC-go-soF" secondAttribute="centerY" id="6PY-y5-6D1"/>
+                <constraint firstItem="aww-mg-77S" firstAttribute="centerY" secondItem="oF3-3B-Arz" secondAttribute="centerY" id="72m-9H-jU7"/>
+                <constraint firstItem="aww-mg-77S" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-5" id="8Hf-S0-ws2"/>
+                <constraint firstItem="aww-mg-77S" firstAttribute="leading" secondItem="oF3-3B-Arz" secondAttribute="trailing" constant="5" id="GTO-fr-WKH"/>
+                <constraint firstItem="hML-fM-oi3" firstAttribute="top" secondItem="oF3-3B-Arz" secondAttribute="bottom" constant="10" id="JiU-4x-JMw"/>
+                <constraint firstItem="hML-fM-oi3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L6e-Jt-VTc"/>
+                <constraint firstItem="oF3-3B-Arz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="Tmv-qF-s7l"/>
+                <constraint firstItem="xfC-go-soF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Zos-wr-UQh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hML-fM-oi3" secondAttribute="trailing" id="b19-cA-kRA"/>
+                <constraint firstItem="oF3-3B-Arz" firstAttribute="leading" secondItem="xfC-go-soF" secondAttribute="trailing" constant="5" id="cKD-Nr-GAN"/>
+                <constraint firstAttribute="bottom" secondItem="hML-fM-oi3" secondAttribute="bottom" id="pl5-wJ-tHm"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
